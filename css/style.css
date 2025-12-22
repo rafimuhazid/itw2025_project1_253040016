@@ -1,10 +1,18 @@
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-top: 60px;
+}
+
 body {
   /* background-image: url(../img/bg.png); */
-  background-color: rgb(15, 14, 14);
+  background-color: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  color: black;
   font-family: "Roboto", sans-serif;
 }
 
@@ -29,12 +37,28 @@ body {
   margin-left: 2.5%;
   font-size: 20px;
   font-weight: bold;
+  color: rgb(25, 217, 153);
+}
+
+#navbar ul {
+  display: flex;
+  margin-right: 2.5%;
+}
+
+#navbar ul li a {
+  color: aquamarine;
+  transition: 0.3s;
+  margin: 20px;
+}
+
+#navbar ul li a:hover {
+  color: rgb(5, 157, 106);
 }
 
 /* Hamburger Menu */
 
 .menu-toggle {
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 25px;
   justify-content: space-between;
@@ -46,7 +70,7 @@ body {
   display: block;
   width: 28px;
   height: 3px;
-  background-color: rgb(255, 255, 255);
+  background-color: aquamarine;
   margin-left: 10%;
   transition: 0.5s;
 }
@@ -93,11 +117,12 @@ body {
   padding-top: 6%;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
   width: 95%;
   margin: 6% auto 2%;
   border-radius: 10px;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(5, 5, 5));
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  background: radial-gradient(aquamarine 30%, black 70%);
+  transition: 0.5s;
 }
 
 #home .kiri {
@@ -109,6 +134,8 @@ body {
 
 #home .kiri p {
   margin-left: 5%;
+  font-size: 16px;
+  margin-top: 2vw;
 }
 
 #home .kiri h1 {
@@ -116,13 +143,30 @@ body {
   font-size: 7vw;
 }
 
-#home .kiri input {
+#home .kiri a {
   margin-left: 5%;
   width: 40%;
   text-align: start;
-  font-size: 2vw;
-  border: none;
-  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 2vw;
+  border-radius: 3px;
+  background: black;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#home .kiri a:hover {
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  background: transparent;
+}
+
+#home .atas {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 #home .hero {
@@ -135,19 +179,22 @@ body {
 
 #home .hero img {
   max-width: 100%;
+  filter: drop-shadow(5px 5px 5px);
 }
 
-#home .kanan {
-  width: 37.5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#home .bawah {
+  margin: auto;
+  font-size: 10vw;
+  font-weight: bold;
+  color: aquamarine;
+  border: 3px solid aquamarine;
+  z-index: 99;
+  transition: 0.3s;
 }
 
-#home .kanan p {
-  margin-left: 5%;
-  margin-right: 10%;
-  text-align: justify;
+#home .bawah:hover {
+  color: black;
+  background-color: aquamarine;
 }
 
 /* Akhir Home */
@@ -170,6 +217,7 @@ body {
 
 #about img {
   width: 80%;
+  filter: drop-shadow(5px 5px 5px aquamarine);
 }
 
 #about .isi {
@@ -186,41 +234,69 @@ body {
   padding: 3vw;
   margin-top: 5%;
   margin-bottom: 5%;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
+  color: aquamarine;
+  border: 1px solid aquamarine;
   margin-right: 5%;
   border-radius: 5px;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  transition: 0.3s;
+}
+
+#about .isi .pengenalan:hover {
+  color: black;
+  background-color: aquamarine;
 }
 
 #about .isi .pengenalan h1 {
-  font-size: 3vw;
+  font-size: 32px;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 #about .isi .profile {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 20px;
   margin-right: 5%;
   height: 60%;
 }
 
+#about .isi .pendidikan,
+.pengalaman,
+.contact {
+  margin: 5px;
+}
+
 #about .isi .profile .pendidikan {
   flex: 1;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
+  border: 1px solid aquamarine;
   display: flex;
   justify-content: center;
   flex-direction: column;
   border-radius: 5px;
   padding: 2vw;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  color: aquamarine;
+  transition: 0.3s;
+}
+
+#about .isi .profile .pendidikan:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+#about .isi .profile .pengalaman:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+#about .isi .profile .contact:hover {
+  background-color: aquamarine;
+  color: black;
 }
 
 #about .isi .profile .pendidikan h1,
 .pengalaman h1,
 .contact h1 {
-  font-size: 2vw;
+  font-size: 20px;
   font-weight: bold;
   margin-bottom: 10px;
   text-align: center;
@@ -228,37 +304,44 @@ body {
 
 #about .isi .profile .pendidikan p {
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 16px;
 }
 
 #about .isi .profile .pengalaman {
   flex: 1;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
+  border: 1px solid aquamarine;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
   padding: 2vw;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  color: aquamarine;
+  transition: 0.3s;
 }
 
 #about .isi .profile .pengalaman p {
   width: 80%;
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 16px;
 }
 
 #about .isi .profile .contact {
   flex: 1;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
+  border: 1px solid aquamarine;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   border-radius: 5px;
   padding: 2vw;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  color: aquamarine;
+  transition: 0.3s;
+}
+
+#about .isi .profile .contact p {
+  font-size: 16px;
+  text-align: center;
 }
 
 /* Akhir About */
@@ -275,51 +358,64 @@ body {
   font-size: 15vw;
   text-align: center;
   margin-bottom: 2vw;
+  color: aquamarine;
 }
 
 #hobby .daftar-hobby {
   display: flex;
   width: 90%;
-  gap: 2%;
+  margin: 10px;
   margin: auto;
 }
 
 #hobby img {
   width: 100%;
   border-radius: 6px;
-  filter: grayscale(1);
 }
 
 #hobby .daftar-hobby .satu,
-.tiga {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
-  padding: 10px;
-  border-radius: 6px;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
-}
-#hobby .daftar-hobby .dua,
+.dua,
+.tiga,
 .empat {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
+  border: 1px solid aquamarine;
   padding: 10px;
   border-radius: 6px;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  color: aquamarine;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+#hobby .daftar-hobby .satu:hover {
+  color: black;
+  background-color: aquamarine;
+}
+
+#hobby .daftar-hobby .dua:hover {
+  color: black;
+  background-color: aquamarine;
+}
+
+#hobby .daftar-hobby .tiga:hover {
+  color: black;
+  background-color: aquamarine;
+}
+
+#hobby .daftar-hobby .empat:hover {
+  color: black;
+  background-color: aquamarine;
 }
 
 #hobby .daftar-hobby .satu h2,
 .dua h2,
 .tiga h2,
 .empat h2 {
-  font-size: 2vw;
+  font-size: 20px;
+  text-align: center;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -344,17 +440,23 @@ body {
 }
 #bandfav .judul h1 {
   margin-left: 10%;
+  color: aquamarine;
 }
 
 #bandfav .daftarband {
   flex: 1;
 }
 
+#bandfav .daftarband img:hover {
+  scale: 1.1;
+}
+
 #bandfav .daftarband img {
   width: 30%;
-  margin: 0.6;
+  margin: 2px;
   border-radius: 1vw;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  box-shadow: 0px 4px 1px aquamarine;
+  transition: 0.3s;
 }
 
 /* Akhir Band Favorit */
@@ -364,7 +466,8 @@ body {
 #contact {
   display: flex;
   margin: 0 auto 6%;
-  width: 90%;
+  width: 95%;
+  color: aquamarine;
 }
 
 #contact .infocontact h1 {
@@ -381,9 +484,8 @@ body {
 
 #contact .infocontact img {
   width: 15%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(249, 249, 249);
   border-radius: 50%;
-  filter: invert(1);
 }
 
 #contact .infocontact .no,
@@ -394,6 +496,26 @@ body {
   align-items: center;
   margin-bottom: 4px;
   font-size: 1.5vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#contact .infocontact .no:hover {
+  filter: invert(1);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#contact .infocontact .email:hover {
+  filter: invert(1);
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#contact .infocontact .lokasi:hover {
+  filter: invert(1);
+  gap: 10px;
+  margin-top: 10px;
 }
 
 #contact .infocontact .no h2,
@@ -403,8 +525,13 @@ body {
   margin-left: 10px;
 }
 
-#contact .infocontact .sosm1ed img {
+#contact .infocontact .sosmed img {
   margin-right: 10px;
+  transition: 0.3s;
+}
+
+#contact .infocontact .sosmed a {
+  display: flex;
 }
 
 #contact .contactme {
@@ -413,9 +540,32 @@ body {
   flex-direction: column;
   background: linear-gradient(110deg, rgba(32, 36, 36), rgb(0, 0, 0));
   padding: 5vw;
-  border-radius: 50px;
+  border-radius: 30px;
   height: 100%;
-  box-shadow: 0px 2px 1px rgb(255, 255, 255, 0.6);
+  box-shadow: 0px 2px 1px rgb(15, 137, 96);
+}
+
+#contact .infocontact .no a,
+.email a,
+.lokasi a {
+  display: flex;
+  text-align: center;
+  color: aquamarine;
+}
+
+#contact .sosmed {
+  display: flex;
+  gap: 20px;
+}
+
+#contact .sosmed a {
+  display: inline-block;
+  transition: 0.3s;
+  color: aquamarine;
+}
+
+#contact .sosmed a:hover {
+  filter: invert(1);
 }
 
 #contact .contactme h1 {
@@ -467,3 +617,302 @@ a {
   border-radius: 7px;
 }
 /* Akhir Footer */
+
+/* Responsif */
+
+/* Ukuran Tablet  */
+@media (max-width: 768px) {
+  /* Navbar  */
+
+  #navbar {
+    height: 50px;
+  }
+
+  #navbar ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    margin-top: 50px;
+    transition: 0.5s;
+    opacity: 1;
+    gap: 5px;
+    left: -100%;
+  }
+
+  #navbar ul li a:hover {
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 0;
+    color: black;
+  }
+
+  #navbar ul.slide {
+    left: 0;
+  }
+
+  #navbar .menu-toggle {
+    display: flex;
+    color: aquamarine;
+  }
+
+  /* Akhir Navbar */
+
+  /* Home */
+
+  #home .kiri input {
+    width: 50%;
+  }
+
+  /* Akhir Home */
+
+  /* About */
+
+  #about {
+    flex-direction: column;
+  }
+
+  #about .isi .profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+  }
+
+  #about .isi .pendidikan,
+  .pengalaman,
+  .contact {
+    margin: 10px;
+  }
+
+  #about .isi .pengenalan {
+    margin-right: 0;
+  }
+
+  #about .isi .profile {
+    margin-right: 0;
+  }
+
+  /* Akhir About */
+
+  /* Band Fav */
+
+  #bandfav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #bandfav .judul h1 {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+
+  /* Akhir Band Fav */
+
+  /* Contact */
+
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .infocontact h1 {
+    font-size: 32px;
+  }
+
+  #contact .infocontact {
+    align-items: center;
+    display: flex;
+  }
+
+  #contact .infocontact img {
+    width: 10%;
+    margin: 10px;
+    background-color: rgb(249, 249, 249);
+    border-radius: 50%;
+  }
+
+  #contact .infocontact .no,
+  .email,
+  .lokasi {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .sosmed {
+    flex-direction: column;
+  }
+
+  #contact a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: aquamarine;
+  }
+
+  #contact .infocontact .lokasi {
+    margin-bottom: 4%;
+  }
+
+  #contact .infocontact .no h2,
+  .email h2,
+  .lokasi h2 {
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  #contact .infocontact .sosmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #contact .infocontact .sosmed img {
+    width: 10%;
+  }
+
+  #contact .infocontact .sosmed a {
+    display: flex;
+    flex-direction: row;
+  }
+
+  #contact .contactme {
+    width: 80%;
+    margin-top: 5%;
+  }
+
+  /* Akhir Contact */
+}
+
+/* Ukuran Handphone */
+@media (max-width: 576px) {
+  /* Home */
+
+  #home .atas {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 6%;
+  }
+
+  #home .kiri {
+    text-align: center;
+    align-items: center;
+  }
+
+  #home .kiri h1 {
+    font-size: 10vw;
+  }
+
+  #home .kiri input {
+    width: 100%;
+  }
+
+  #home .hero {
+    width: 50%;
+  }
+
+  #home .kiri input,
+  p,
+  h1 {
+    margin-left: 0;
+  }
+
+  /* Akhir Home */
+
+  /* About */
+
+  #about {
+    flex-direction: column;
+    text-align: center;
+  }
+  #about .isi .profile {
+    flex-direction: column;
+  }
+
+  /* Akhir About */
+
+  /* Hobby */
+
+  #hobby .daftar-hobby {
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+  }
+
+  /* Akhir Hobby */
+
+  /* Band fav */
+
+  #bandfav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #bandfav .judul h1 {
+    margin-left: 0;
+    margin-bottom: 5%;
+  }
+
+  /* Akhir Band Fav */
+
+  /* Contact */
+
+  #contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .infocontact h1 {
+    font-size: 32px;
+  }
+
+  #contact .infocontact {
+    align-items: center;
+    display: flex;
+  }
+
+  #contact .infocontact .no,
+  .email,
+  .lokasi {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .infocontact .lokasi {
+    margin-bottom: 4%;
+  }
+
+  #contact .infocontact .no h2,
+  .email h2,
+  .lokasi h2 {
+    text-align: center;
+    margin-left: 0;
+    font-size: 14px;
+  }
+
+  #contact .infocontact .sosmed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  #contact .infocontact .sosmed img {
+    width: 10%;
+  }
+
+  #contact .contactme {
+    width: 80%;
+    margin-top: 5%;
+  }
+
+  /* Akhir Contact */
+}

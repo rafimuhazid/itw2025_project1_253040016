@@ -6,14 +6,21 @@
     <title>Project1 - Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
     <section id="navbar">
       <h1>MyPortfolio</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#hobby">Hobby</a></li>
+        <li><a href="#bandfav">BandFav</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
       <div class="menu-toggle">
         <input type="checkbox" name="" id="" />
         <span></span>
@@ -25,21 +32,18 @@
 
     <!-- Home -->
     <section id="home">
-      <div class="kiri">
-        <p>2025</p>
-        <h1>Rafii Muhazzid</h1>
-        <input type="button" value="contact" />
+      <div class="atas">
+        <div class="kiri">
+          <h1>FRONT END - DEV</h1>
+          <p>Membangun antarmuka web yang responsif, interaktif, dan mudah digunakan.</p>
+          <a href="#contact">contact</a>
+        </div>
+        <div class="hero">
+          <img src="img/hero.png" alt="" />
+        </div>
       </div>
-      <div class="hero">
-        <img src="img/hero.png" alt="" />
-      </div>
-      <div class="kanan">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, itaque adipisci ipsum deleniti minima obcaecati aspernatur repellendus tempore distinctio vitae blanditiis, pariatur sapiente iusto, reiciendis earum suscipit sunt
-          magnam fuga quae dolores ipsam. Et quidem, placeat aliquid sequi eveniet enim illum sit praesentium omnis quasi alias ab ullam mollitia dolores. Voluptate mollitia officiis ipsa impedit provident unde quas quae sed deserunt optio
-          tenetur quam, accusantium, quod repellat ipsam ad incidunt, voluptas consequuntur architecto culpa asperiores. Molestiae fuga perspiciatis quidem modi ad officia dicta fugit placeat, consectetur inventore. Quas facilis nostrum
-          mollitia, explicabo quia impedit necessitatibus expedita cum dolorum saepe tempore.
-        </p>
+      <div class="bawah">
+        <h1>RAFII MUHAZZID N</h1>
       </div>
     </section>
     <!-- Akhir Home -->
@@ -53,8 +57,9 @@
         <div class="pengenalan">
           <h1>Hi, I'M Rafii Muhazzid</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus sunt, mollitia unde voluptas non recusandae iusto ducimus modi, perspiciatis voluptatem. Assumenda, maxime unde. Consequuntur temporibus obcaecati sapiente
-            quo reiciendis exercitationem laudantium. Non dolore dicta illo, repellat cum aperiam tenetur, minima natus dignissimos iusto consequatur magni explicabo vitae, blanditiis unde!
+            Perkenalkan, saya Rafii Muhazzid Nurrisky, seorang mahasiswa berusia 19 tahun yang memiliki ketertarikan kuat dalam dunia teknologi kreatif, khususnya pada desain UI/UX dan pengembangan Front End. Saya menikmati proses mengubah
+            ide menjadi tampilan antarmuka yang menarik, fungsional, dan mudah digunakan, serta berfokus pada pengalaman pengguna yang optimal. Dengan semangat belajar yang tinggi, saya terus mengembangkan kemampuan dalam menggabungkan
+            estetika desain dan logika pemrograman untuk menciptakan website dan aplikasi yang modern, responsif, dan relevan dengan kebutuhan pengguna masa kini.
           </p>
         </div>
         <div class="profile">
@@ -67,15 +72,24 @@
           <div class="pengalaman">
             <h1>PENGALAMAN</h1>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut similique provident explicabo, iure perferendis omnis ullam commodi placeat! Expedita quas repellendus error assumenda. Accusantium quam maiores quisquam laboriosam
-              facilis unde!
+              Saya memiliki pengalaman di bidang desain grafis, khususnya menggunakan CorelDRAW, serta memahami alur kerja percetakan dari proses desain hingga hasil cetak. Selain itu, saya merupakan lulusan SMKN 7 Baleendah jurusan RPL
+              (Rekayasa Perangkat Lunak) yang membekali saya dengan dasar pemrograman dan pengembangan perangkat lunak.
             </p>
           </div>
           <div class="contact">
             <h1>CONTACT</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              <b>WA : </b> <br />
+              081234567890
+            </p>
+            <p>
+              <b>IG :</b> <br />
+              rfmn_12
+            </p>
+            <p>
+              <b>EMAIL :</b> <br />
+              rafimn0212@gmail.com
+            </p>
           </div>
         </div>
       </div>
@@ -109,9 +123,10 @@
     <!-- Band Favorit -->
     <section id="bandfav">
       <div class="judul">
-        <h1>MY</h1>
-        <h1>FAV</h1>
-        <h1>BAND</h1>
+        <h1>
+          MY <br />
+          FAV BAND
+        </h1>
       </div>
       <div class="daftarband">
         <img src="img/1.png" alt="" />
@@ -132,40 +147,52 @@
       <div class="infocontact">
         <h1>Contact Info</h1>
         <div class="no">
-          <img src="img/contact.png" alt="">
-          <h2>+62-812-3456-7890</h2>
+          <a href="">
+            <img src="img/contact.png" alt="" />
+            <h2>+62-812-3456-7890</h2>
+          </a>
         </div>
         <div class="email">
-          <img src="img/email.png" alt="">     
-          </img>
-          <h2>rafimn0212@gmail.com</h2>
+          <a href="">
+            <img src="img/email.png" alt="" />
+            <h2>rafimn0212@gmail.com</h2>
+          </a>
         </div>
         <div class="lokasi">
-          <img src="img/location.png" alt="">
-          <h2>Jalan Papakserang, Kec. Ciparay Kab.Bandung</h2>
+          <a href="">
+            <img src="img/location.png" alt="" />
+            <h2>Jalan Papakserang, Kec. Ciparay Kab.Bandung</h2>
+          </a>
         </div>
         <h1>Sosial Media</h1>
         <div class="sosmed">
-          <img src="img/tiktok.png" alt="">
-          <img src="img/ig.png" alt="">
+          <a href="">
+            <img src="img/ig.png" alt="" />
+            <h2>rfmn_12</h2>
+          </a>
+          <a href="">
+            <img src="img/tiktok.png" alt="" />
+            <h2>rfmn_12</h2>
+          </a>
         </div>
       </div>
       <div class="contactme">
         <h1>Contact Me</h1>
         <form action="">
-          <input type="text" placeholder="Nama">
-          <input type="email" placeholder="Email">
+          <input type="text" placeholder="Nama" />
+          <input type="email" placeholder="Email" />
           <textarea name="" id="" placeholder="Pesan Anda"></textarea>
-          <input type="submit" value="Kirim">
+          <input type="submit" value="Kirim" />
         </form>
       </div>
     </section>
     <!-- Akhir Contact -->
 
     <!-- Footer -->
-     <footer>
+    <footer>
       <p>2025 By : <a href="">Rafii Muhazzid</a></p>
-     </footer>
-    <!-- Akhir Footwr -->
+    </footer>
+    <!-- Akhir Footer -->
+    <script src="js/script.js"></script>
   </body>
 </html>
