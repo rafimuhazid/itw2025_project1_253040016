@@ -1,3 +1,4 @@
+// Navbar Handphone
 const menuToggle = document.querySelector(".menu-toggle input");
 const navbar = document.querySelector("#navbar ul");
 

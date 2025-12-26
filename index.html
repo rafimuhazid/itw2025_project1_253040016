@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project1 - Portfolio</title>
+    <title>Rafii MN Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
   </head>
   <body>
     <!-- Navbar -->
@@ -40,7 +40,7 @@
           <a href="#contact">contact</a>
         </div>
         <div class="hero">
-          <img src="img/hero.png" alt="" />
+          <img src="img/hero/hero.png" alt="" />
         </div>
       </div>
       <div class="bawah">
@@ -52,7 +52,7 @@
     <!-- About -->
     <section id="about">
       <div class="hero">
-        <img src="img/hero.png" height="" />
+        <img src="img/hero/hero.png" height="" />
       </div>
       <div class="isi">
         <div class="pengenalan">
@@ -77,21 +77,6 @@
               (Rekayasa Perangkat Lunak) yang membekali saya dengan dasar pemrograman dan pengembangan perangkat lunak.
             </p>
           </div>
-          <div class="contact">
-            <h1>CONTACT</h1>
-            <p>
-              <b>WA : </b> <br />
-              081234567890
-            </p>
-            <p>
-              <b>IG :</b> <br />
-              rfmn_12
-            </p>
-            <p>
-              <b>EMAIL :</b> <br />
-              rafimn0212@gmail.com
-            </p>
-          </div>
         </div>
       </div>
     </section>
@@ -102,19 +87,19 @@
       <h1>HOBBY</h1>
       <div class="daftar-hobby">
         <div class="satu">
-          <img src="img/hobby1.png" alt="" />
+          <img src="img/hobby/hobby1.png" alt="" />
           <h2>Bermain Gitar</h2>
         </div>
         <div class="dua">
-          <img src="img/hobby2.png" alt="" />
+          <img src="img/hobby/hobby2.png" alt="" />
           <h2>Bermain Bola</h2>
         </div>
         <div class="tiga">
-          <img src="img/hobby3.png" alt="" />
+          <img src="img/hobby/hobby3.png" alt="" />
           <h2>Muaythai</h2>
         </div>
         <div class="empat">
-          <img src="img/hobby4.png" alt="" />
+          <img src="img/hobby/hobby4.png" alt="" />
           <h2>Ngoding</h2>
         </div>
       </div>
@@ -130,15 +115,15 @@
         </h1>
       </div>
       <div class="daftarband">
-        <img src="img/1.png" alt="" />
-        <img src="img/2.png" alt="" />
-        <img src="img/3.png" alt="" />
-        <img src="img/4.png" alt="" />
-        <img src="img/5.png" alt="" />
-        <img src="img/6.png" alt="" />
-        <img src="img/7.png" alt="" />
-        <img src="img/8.png" alt="" />
-        <img src="img/9.png" alt="" />
+        <img src="img/bandfavorit/1.png" alt="" />
+        <img src="img/bandfavorit/2.png" alt="" />
+        <img src="img/bandfavorit/3.png" alt="" />
+        <img src="img/bandfavorit/4.png" alt="" />
+        <img src="img/bandfavorit/5.png" alt="" />
+        <img src="img/bandfavorit/6.png" alt="" />
+        <img src="img/bandfavorit/7.png" alt="" />
+        <img src="img/bandfavorit/8.png" alt="" />
+        <img src="img/bandfavorit/9.png" alt="" />
       </div>
     </section>
     <!-- Akhir Band Favorit -->
@@ -154,36 +139,41 @@
           </a>
         </div>
         <div class="email">
-          <a href="">
+          <a href="mailto:rafimn0212@gmail.com">
             <i class="fa-solid fa-envelope"></i>
             <h2>rafimn0212@gmail.com</h2>
           </a>
         </div>
         <div class="lokasi">
-          <a href="">
+          <a href="https://maps.app.goo.gl/dnrvK6ULd882zc189">
             <i class="fa-solid fa-location-dot"></i>
             <h2>Jalan Papakserang, Kec. Ciparay Kab.Bandung</h2>
           </a>
         </div>
         <h1>Sosial Media</h1>
         <div class="sosmed">
-          <a href="">
+          <a href="https://www.instagram.com/rfmn_12">
             <i class="fa-brands fa-instagram"></i>
-            <h2>rfmn_12</h2>
+            <h2>@rfmn_12</h2>
           </a>
-          <a href="">
+          <a href="https://www.tiktok.com/@rrrrf_1">
             <i class="fa-brands fa-tiktok"></i>
-            <h2>rfmn_12</h2>
+            <h2>@rrrrf_1</h2>
           </a>
         </div>
       </div>
       <div class="contactme">
         <h1>Contact Me</h1>
-        <form action="">
-          <input type="text" placeholder="Nama" />
-          <input type="email" placeholder="Email" />
-          <textarea name="pesan" id="" placeholder="Pesan Anda"></textarea>
-          <input type="submit" value="Kirim" />
+        <div class="alert dnone">
+          <p><strong>Terimakasih!</strong> Pesan Telah Berhasil Dikirim</p>
+          <button class="close">Close</button>
+        </div>
+        <form action="" name="rafi-contact-form">
+          <input name="nama" type="text" placeholder="Nama" />
+          <input name="email" type="email" placeholder="Email" />
+          <textarea name="pesan" name="pesan" id="" placeholder="Pesan Anda"></textarea>
+          <button type="submit" class="submit">Kirim</button>
+          <button type="submit" class="loading dnone">Loading</button>
         </form>
       </div>
     </section>
@@ -194,6 +184,8 @@
       <p>2025 By : <a href=""> Rafii Muhazzid</a></p>
     </footer>
     <!-- Akhir Footer -->
+
     <script src="js/script.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

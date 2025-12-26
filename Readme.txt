@@ -1,3 +1,10 @@
+Sumber Font :
+https://fonts.google.com/specimen/Space+Grotesk
+
+Sumber Icon :
+https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+
+Sumber Foto Daftar Hobby :
 https://fity.club/lists/q/queen-logo-wallpaper/
 https://www.kibrispdr.org/logo-guns-n-roses.html
 https://freebiesupply.com/logos/nirvana-logo/
