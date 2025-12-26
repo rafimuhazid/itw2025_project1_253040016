@@ -797,7 +797,7 @@ footer a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    height: 60vh;
+    height: 50vh;
     width: 50%;
     top: 0;
     justify-content: space-between;
@@ -806,7 +806,6 @@ footer a {
     padding: 60px 0 60px;
     transition: 0.5s;
     opacity: 1;
-    gap: 60px;
     right: -100%;
     align-items: center;
     border-radius: 5px;
