@@ -800,10 +800,9 @@ footer a {
     height: 50vh;
     width: 50%;
     top: 0;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: rgb(0, 0, 0);
     margin-top: 40px;
-    padding: 60px 0 60px;
     transition: 0.5s;
     opacity: 1;
     right: -100%;
