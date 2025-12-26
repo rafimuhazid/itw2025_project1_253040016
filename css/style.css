@@ -204,7 +204,7 @@ body {
 }
 
 #home .hero img {
-  max-width: 100%;
+  width: 100%;
   filter: drop-shadow(5px 5px 5px);
 }
 
@@ -797,7 +797,7 @@ footer a {
     position: absolute;
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 60vh;
     width: 50%;
     top: 0;
     background-color: rgb(0, 0, 0);
@@ -997,22 +997,26 @@ footer a {
     font-size: 10vw;
   }
 
-  #home .kiri input {
-    width: 100%;
+  #home .kiri a {
+    width: 80%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   #home .hero {
     width: 50%;
   }
 
-  #home .kiri input,
-  p,
-  h1 {
+  #home .kiri a,
+  #home .kiri p,
+  #home .kiri h1 {
     margin-left: 0;
   }
 
   #home .bawah h1 {
-    font-size: 8vw;
+    font-size: 10vw;
   }
 
   #home .kiri a:hover {
