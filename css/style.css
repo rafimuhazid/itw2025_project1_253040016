@@ -1038,7 +1038,7 @@ footer a {
 
   #hobby .daftar-hobby {
     flex-direction: column;
-    width: 55%;
+    width: 80%;
     gap: 20px;
   }
 
@@ -1053,7 +1053,7 @@ footer a {
   #hobby .daftar-hobby .dua::after,
   #hobby .daftar-hobby .tiga::after,
   #hobby .daftar-hobby .empat::after {
-    top: 71.5%;
+    top: 72.5%;
   }
   /* Akhir Hobby Uk Hp*/
 
