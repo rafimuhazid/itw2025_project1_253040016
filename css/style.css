@@ -34,7 +34,7 @@ body {
   top: 0;
   left: 0;
   right: 0;
-  height: 10%;
+  height: 50px;
   z-index: 999;
   background-color: rgb(0, 0, 0);
 }
